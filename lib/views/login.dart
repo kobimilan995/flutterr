@@ -45,16 +45,7 @@ class _LoginPageState extends State<LoginPage> {
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () {
-          setState(() {
-            loading = true;
-          });
-          HttpService.get('web/api/get/countries')
-              .then((response) => {
-                print(json.decode(response.body)),
-                setState(() {
-                  loading = false;
-                })
-          });
+          //send request for login
         },
         padding: EdgeInsets.all(12),
         color: Colors.indigoAccent,

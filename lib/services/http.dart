@@ -1,6 +1,7 @@
 import 'package:http/http.dart' as http;
 
-String _url = 'https://staging.sportyfriends.com/';
+//add real api url
+String _url = 'test';
 
 class HttpService {
   static get(url) {
